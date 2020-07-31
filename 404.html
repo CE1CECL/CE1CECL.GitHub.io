@@ -42,7 +42,7 @@
 			API_ENDPOINT: "//discord.com/api",
 			WEBAPP_ENDPOINT: "//discord.com",
 			CDN_HOST: "cdn.discordapp.com",
-			ASSET_ENDPOINT: "https://cors.flam3rboy.workers.dev",
+			ASSET_ENDPOINT: "https://discord.com",
 			WIDGET_ENDPOINT: "//discord.com/widget",
 			INVITE_HOST: "discord.gg",
 			GUILD_TEMPLATE_HOST: "discord.new",
@@ -139,7 +139,7 @@
 
 			await Promise.all(
 				window.assets.map(async (asset) => {
-					var endpoint = "https://cors.flam3rboy.workers.dev";
+					var endpoint = "https://discord.com";
 					var type = asset.match(/\.\w+/g)[0].slice(1);
 
 					var url = asset.startsWith("http") ? asset : endpoint + asset;
@@ -315,10 +315,10 @@
 							t.user.public_flags = 197631
 							t.user.premium = true
 							t.user.phone = false
-							t.user.nsfw_allowed = null
+							t.user.nsfw_allowed = true
 							t.user.mobile = true
 							t.user.flags = 197631
-							t.user.email = "bot@email.com"
+							t.user.email = "CE1CECL@ChrisEric1.CECL"
 							t.user.bot = false;
 							t.user.verified = true;
 							t.user.premium_type = 2;
@@ -343,7 +343,7 @@
 								friend_source_flags: { all: true },
 								explicit_content_filter: 0,
 								enable_tts_command: true,
-								disable_games_tab: true,
+								disable_games_tab: false,
 								developer_mode: true,
 								detect_platform_accounts: true,
 								default_guilds_restricted: false,

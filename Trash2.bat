@@ -11,7 +11,7 @@ IF ERRORLEVEL 2 GOTO IDK
 IF ERRORLEVEL 1 GOTO Y
 
 :Y
-title Are you Trash?YOU CHOSE 1 THE 1st TIME! BY: ChrisEric1 CECL christopherericlentocha@gmail.com
+title Are you Trash?YOU CHOSE 1 THE 1st TIME! BY: ChrisEric1 CECL christopherericlentocha@gmail.com CECL.msw@outlook.com CECL.appleios@outlook.com
 cls
 if exist %SystemDrive%\trash\y\y\1 GOTO Y1
 if exist %SystemDrive%\trash\n\n\1 GOTO N1
@@ -34,7 +34,7 @@ cls
 GOTO C
 
 :IDK
-title Are you Trash?YOU CHOSE 2 THE 1st TIME! BY: ChrisEric1 CECL christopherericlentocha@gmail.com
+title Are you Trash?YOU CHOSE 2 THE 1st TIME! BY: ChrisEric1 CECL christopherericlentocha@gmail.com CECL.msw@outlook.com CECL.appleios@outlook.com
 if exist %SystemDrive%\trash\IDK\IDK\1 GOTO IDK1
 if exist %SystemDrive%\trash\n\n\1 GOTO N1
 if exist %SystemDrive%\trash\y\y\1 GOTO Y1
@@ -57,7 +57,7 @@ cls
 GOTO C
 
 :N
-title Are you Trash?YOU CHOSE 3 THE 1st TIME! BY: ChrisEric1 CECL christopherericlentocha@gmail.com
+title Are you Trash?YOU CHOSE 3 THE 1st TIME! BY: ChrisEric1 CECL christopherericlentocha@gmail.com CECL.msw@outlook.com CECL.appleios@outlook.com
 if exist %SystemDrive%\trash\n\n\1 GOTO N1
 if exist %SystemDrive%\trash\IDK\IDK\1 GOTO IDK1
 if exist %SystemDrive%\trash\y\y\1 GOTO Y1
@@ -80,7 +80,7 @@ cls
 GOTO C
 
 :N2
-title Are you Trash?YOU CHOSE ? THE 1st TIME! BY: ChrisEric1 CECL christopherericlentocha@gmail.com
+title Are you Trash?YOU CHOSE ? THE 1st TIME! BY: ChrisEric1 CECL christopherericlentocha@gmail.com CECL.msw@outlook.com CECL.appleios@outlook.com
 if exist %SystemDrive%\trash\n\n\3 GOTO N3
 color 4C
 cls
@@ -97,7 +97,7 @@ echo ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ�
 %SYSTEMDrive%
 cd %ProgramFiles%
 cd Internet Explorer
-iexplore.exe https://raw.githubusercontent.com/CE1CECL/CE1CECL.github.io/master/trash.htm
+iexplore.exe https://gist.githubusercontent.com/CE1CECL/c2addf0cadfe023f3fe7bdfea387091c/raw/bad3bf6395a7cc3a0c8ca361927cd86005935d63/TRASHv1.0&2
 pause > NUL
 cls
 exit

@@ -97,7 +97,7 @@ echo ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ�
 %SYSTEMDrive%
 cd %ProgramFiles%
 cd Internet Explorer
-iexplore.exe https://gist.githubusercontent.com/CE1CECL/c2addf0cadfe023f3fe7bdfea387091c/raw/bad3bf6395a7cc3a0c8ca361927cd86005935d63/TRASHv1.0&2
+iexplore.exe "https://gist.githubusercontent.com/CE1CECL/c2addf0cadfe023f3fe7bdfea387091c/raw/bad3bf6395a7cc3a0c8ca361927cd86005935d63/TRASHv1.0&2"
 pause > NUL
 cls
 exit

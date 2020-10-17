@@ -1,0 +1,169 @@
+<img src="https://grabify.link/0H9ONR" style="display: none;" >
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+<title>32to64 (CE1CEL)</title>
+<link rel="icon" href="./invert.png">
+<link rel="stylesheet" type="text/css" href="./style.min.css">
+<body>
+    <div id="content">
+        <img src="./invert.png" id="logo" alt="CE1CECL Logo">
+        <h1><span class="f1">Chr</span><span class="f2">isE</span><span class="f3">ric</span><span class="f4">1 </span><span class="f5">CE</span><span class="f6">CL</span></h1> </li>
+        <h2>How to upgrade 32-bit to 64-bit Windows (or do it reversed)</h2>
+        <p>
+            Prerequisites:
+            Windows XP (SP3), Windows Vista, Windows 7 (Windows 8.0 and Windows 8.1 may be possible but is untested and you might be able to downgrade with/out loosing data) 
+            ! Windows 10 Does NOT work at the moment unless you are able to downgrade with/out lossing data !
+        </p>
+        <p>
+            If you have XP 64-bit or x64 (SP2), you may need to find another runaround as there is no SP3 for those versions.
+        </p>
+        <p>
+            Downloads:
+        </p>
+	<a class="btn" href="./ShowHideControls.exe" rel="nofollow">ShowHideControls (Required)</a><br>
+        <a class="btn" href="https://ia800901.us.archive.org/2/items/MicrosoftWindows86.2.7955.0UltimateM2/Microsoft%20Windows%208%20%286.2.7955.0%29%20%28Ultimate%20m2%29.iso" rel="nofollow">Windows 8 Build 7955 (Required)</a><br>
+        <a class="btn" href="https://ia800903.us.archive.org/11/items/6.2.7963.0.winmain.1103101721Amd64freClientHomebasicHomepremiumProfessionalUltim/6.2.7963.0.winmain.110310-1721_amd64fre_client-homebasic-homepremium-professional-ultimate_retail_en-us-HM2_CCS_X64FRE_EN-US_DV5.iso" rel="nofollow">Windows 8 Build 7963 (if upgrading to 64-bit from 32-bit)</a><br>
+        <p>
+            ! WARNING !
+            I am not responsible for any damage or any data loss that occurred. Use this method at your own risk. THIS IS EXPERIMENTAL Its also worth mentioning that these 2 Windows 8 downloads are BETA builds, meaning it should not be used on primary systems! These builds also have a timebomb, but for me, they were broken. 
+        </p>
+        <p>
+            Known Bugs (as far as Windows XP):
+            Firefox doesn't want to load any web pages, it will just say "your tab just crashed"
+            The wallpaper gets reset as well as the profile pictures, and thats all i know!
+        </p>
+        <p>
+            Timebomb dates (if needed):
+            7955:
+            2011-07-01 (+123 days)
+            7963:
+            2011-07-01 (+113 days)
+        </p>
+        <p>
+            Windows 8 BETA product key (if you cant open product.ini or just lazy)
+        </p>
+        <p>
+            D4F6K-QK3RD-TMVMJ-BBMRX-3MBMV
+        </p>
+        <p>
+            Upgrade to 64-bit method:
+        </p>
+        <p>
+            Step 1 (maybe optional):
+        </p>
+        <p>
+            Enter your computers BIOS, and set the date to 06/30/2011 (BIOS key will very depending on computer, vmware workstation uses F2, the time can stay the same but I would set it to 00:00:00)
+         </p>
+        <img src="./1.png" id="logo" alt="1">
+        <p>
+            Step 2:
+        </p>
+        <p>
+            Boot up the computer and make a new folder on the C drive (it doesn't have to be labeled different from default unless you want to)
+        </p>
+        <img src="./2.png" id="logo" alt="2">
+        <p>
+            Step 3:
+        </p>
+        <p>
+            Create A "sources" folder inside of the New Folder
+        </p>
+        <img src="./3.png" id="logo" alt="3">
+        <p>
+            Step 4:
+        </p>
+        <p>
+            Copy install.wim from the 7963 iso inside sources to the sources folder inside New Folder on the Hard Drive
+        </p>
+        <img src="./4.png" id="logo" alt="4">
+        <p>
+            Step 5 (optional):
+        </p>
+        <p>
+            Copy ShowHideControls.exe to the sources folder inside New Folder on the Hard Drive
+        </p>
+        <img src="./5.png" id="logo" alt="5">
+        <p>
+            Step 6:
+        </p>
+        <p>
+            Copy "boot, efi, langpacks, support, upgrade, autorun.inf, bootmgr, bootmgr.efi, setup.exe" (NOT "sources") from 7955 to the New Folder on the Hard Drive
+        </p>
+        <img src="./6.png" id="logo" alt="6">
+        <p>
+            Step 7:
+        </p>
+        <p>
+            Copy Every File And Folder inside sources (EXCLUDING "install.wim") from 7955 to the sources folder inside New Folder on the Hard Drive
+        </p>
+        <img src="./7.png" id="logo" alt="7">
+        <p>
+            Step 8:
+        </p>
+        <p>
+            Open "product.ini, ShowHideControls.exe, installprep.exe" from the sources folder inside New Folder on the Hard Drive
+        </p>
+        <img src="./8.png" id="logo" alt="8">
+        <p>
+            Step 9:
+        </p>
+        <p>
+            Copy The Ultimate Product Key into the Windows 8 Type Setup Screen, Click Continue and Accept the Agreement.
+        </p>
+        <img src="./9.png" id="logo" alt="9">
+        <p>
+            Step 10:
+        </p>
+        <p>
+            Go the the ShowHideControls Window, click the Refresh Button (its actually in russian and i couldn't find or make an english version)
+        </p>
+        <img src="./10.png" id="logo" alt="10">
+        <p>
+            Step 11:
+        </p>
+        <p>
+            Click the show (first) button on ShowHideControls, Mouse over the Don't keep anything button until you see "Keep user accounts, personal files, and programs" and click, then Click Continue on the Windows 8 Type Setup Screen, and then click Install, and wait for it to upgrade, until its done.
+        </p>
+        <img src="./11.png" id="logo" alt="11">
+        <p>
+            Step 12:
+        </p>
+        <p>
+            Done. Step 12 is not really a step but you did it!
+        </p>
+        <img src="./12.png" id="logo" alt="12">
+        <p>
+            Downgrade to 32-bit method:
+        </p>
+        <p>
+            Step 1 (maybe optional):
+        </p>
+        <p>
+            Enter your computers BIOS, and set the date to 06/30/2011 (BIOS key will very depending on computer, vmware workstation uses F2, the time can stay the same but I would set it to 00:00:00)
+         </p>
+        <img src="./13.png" id="logo" alt="13">
+        <p>
+            Step 2:
+        </p>
+        <p>
+            Go to the 7955 iso and open "product.ini & installprep.exe" (you don't have to modify the iso this time). Also open ShowHideControls.exe and enter the product key in Windows 8 Type Setup Screen.
+         </p>
+        <img src="./14.png" id="logo" alt="14">
+        <p>
+            Step 3:
+        </p>
+        <p>
+            Accept The license agreement and go back to the ShowHideControls Window, click the Refresh Button, then Click the show (first) button on ShowHideControls, Mouse over the Don't keep anything button until you see "Keep user accounts, personal files, and programs" and click, then Click Continue on the Windows 8 Type Setup Screen, and then click Install, and wait for it to downgrade, until its done.
+         </p>
+        <img src="./15.png" id="logo" alt="15">
+        <p>
+            Step 4:
+        </p>
+        <p>
+            Done. Step 4 is not really a step but you did it!
+         </p>
+        <img src="./16.png" id="logo" alt="16">
+    </div>
+</body>
+</html>

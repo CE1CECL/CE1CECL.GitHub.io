@@ -11,34 +11,42 @@
         <h1><span class="f1">Chr</span><span class="f2">isE</span><span class="f3">ric</span><span class="f4">1 </span><span class="f5">CE</span><span class="f6">CL</span></h1> </li>
         <h2>How to upgrade 32-bit to 64-bit Windows (or do it reversed)</h2>
         <p>
+            NOTE:
+            [#] Means there a note about something, scroll to the bottom of the page to see the note.
+        </p>
+        <p>
+            NOTE:
+            Don't Ask about the Windows 7 and earlier setup, this trick doesn't work on it as Windows 7 uses checks after clicking on it (similar to Windows 10). And no, you can't copy the $WINDOWS.~BT folder over as it knows the Hard Disk ID Number. 
+        </p>
+        <p>
             Prerequisites:
-            Windows XP (SP3), Windows Vista, Windows 7 (Windows 8.0 and Windows 8.1 may be possible but is untested and you might be able to downgrade with/out loosing data) 
-            ! Windows 10 Does NOT work at the moment unless you are able to downgrade with/out lossing data !
+            Windows XP (SP3), Windows Vista, Windows 7, Windows 8.0[1]
+            ! Windows 10[3] and Windows 8.1[2] Does NOT work at the moment unless you are able to downgrade with/out lossing data !
         </p>
         <p>
-            If you have XP 64-bit or x64 (SP2), you may need to find another runaround as there is no SP3 for those versions.
+            If you have XP 64-bit or x64 (SP2), you may need to find another runaround as there is no SP3 for those versions. There might be a registry hack but i don't know what to change! (it would be nice for Windows NT/2000 with KernelEx as well but its unlikely)
         </p>
         <p>
-            Downloads:
+            Downloads[4]:
         </p>
 	<a class="btn" href="./ShowHideControls.exe" rel="nofollow">ShowHideControls (Required)</a><br>
         <a class="btn" href="https://ia800901.us.archive.org/2/items/MicrosoftWindows86.2.7955.0UltimateM2/Microsoft%20Windows%208%20%286.2.7955.0%29%20%28Ultimate%20m2%29.iso" rel="nofollow">Windows 8 Build 7955 (Required)</a><br>
         <a class="btn" href="https://ia800903.us.archive.org/11/items/6.2.7963.0.winmain.1103101721Amd64freClientHomebasicHomepremiumProfessionalUltim/6.2.7963.0.winmain.110310-1721_amd64fre_client-homebasic-homepremium-professional-ultimate_retail_en-us-HM2_CCS_X64FRE_EN-US_DV5.iso" rel="nofollow">Windows 8 Build 7963 (if upgrading to 64-bit from 32-bit)</a><br>
+        <a class="btn" href="https://osvault.weebly.com/" rel="nofollow">Source for Windows 8 Build 7955 & Windows 8 Build 7963 (OSVault) in Windows BETA Repo</a><br>
         <p>
             ! WARNING !
             I am not responsible for any damage or any data loss that occurred. Use this method at your own risk. THIS IS EXPERIMENTAL Its also worth mentioning that these 2 Windows 8 downloads are BETA builds, meaning it should not be used on primary systems! These builds also have a timebomb, but for me, they were broken. 
         </p>
         <p>
-            Known Bugs (as far as Windows XP):
+            Known Bugs (as far as Windows XP)[5]:
             Firefox doesn't want to load any web pages, it will just say "your tab just crashed"
             The wallpaper gets reset as well as the profile pictures, and thats all i know!
         </p>
         <p>
             Timebomb dates (if needed):
-            7955:
             2011-07-01 (+123 days)
-            7963:
-            2011-07-01 (+113 days)
+            Set the BIOS date to (recommended)
+            2011-06-30 00:00:00 [6] (+113 days)
         </p>
         <p>
             Windows 8 BETA product key (if you cant open product.ini or just lazy)
@@ -53,7 +61,7 @@
             Step 1 (maybe optional):
         </p>
         <p>
-            Enter your computers BIOS, and set the date to 06/30/2011 (BIOS key will very depending on computer, vmware workstation uses F2, the time can stay the same but I would set it to 00:00:00)
+            Enter your computers BIOS, and set the date to 06/30/2011 (BIOS key will very depending on computer, vmware workstation uses F2, the time can stay the same but I would set it to 00:00:00) [6]
          </p>
         <img src="./1.PNG" id="logo" alt="1">
         <p>
@@ -134,13 +142,13 @@
         </p>
         <img src="./12.PNG" id="logo" alt="12">
         <p>
-            Downgrade to 32-bit method:
+            Downgrade to 32-bit method[7]:
         </p>
         <p>
             Step 1 (maybe optional):
         </p>
         <p>
-            Enter your computers BIOS, and set the date to 06/30/2011 (BIOS key will very depending on computer, vmware workstation uses F2, the time can stay the same but I would set it to 00:00:00)
+            Enter your computers BIOS, and set the date to 06/30/2011 (BIOS key will very depending on computer, vmware workstation uses F2, the time can stay the same but I would set it to 00:00:00) [6]
          </p>
         <img src="./13.PNG" id="logo" alt="13">
         <p>
@@ -164,6 +172,32 @@
             Done. Step 4 is not really a step but you did it!
          </p>
         <img src="./16.PNG" id="logo" alt="16">
+        <p>
+            {1} Windows 8.0 IS the last known working version to downgrade because of (see [2]). The last known beta to work at the moment is build 9431 however, downgrading to this version will do the same issue!
+         </p>
+        <p>
+            {2} Windows 8.1 RTM or later downgrading to build 9431 or earlier is known to cause the following issue (see photo) /and just excuse my "Rick Astley" name in the photo lol\
+         </p>
+        <img src="./17.PNG" id="logo" alt="17">
+        <p>
+            {3} Windows 10 build 9841 (TP) or later does not let you use the ShowHideControls trick for whatever reason (see video) It it known not occur on build 9870 because its just a windows 8.1 setup named "installprep.exe" instead of "setupprep.exe"!
+         </p>
+	<video width="1024" height="768" controls autoplay loop>
+	  <source src="0.mp4" type="video/mp4">
+	  Your browser does not support the video tag.
+	</video>
+        <p>
+            {4} You don't have to use these 2 specific builds in the downloads section, these just only work with Windows XP, but if you on something like Windows 7, You can probably use Windows 8 Consumer or Dev preview as these work just find at least for Windows 7/8.
+         </p>
+        <p>
+            {5} The wallpaper from downgrading from Windows 8 Consumer preview to Windows 8 Dev preview didn't change and its only noticed in XP, its probably because Windows XP didn't come with an "AppData" folder while Windows vista and Up did, and it doesn't redirect, while "Documents and Settings" was changed to "Users", it actually has a "symbolic link".
+         </p>
+        <p>
+            {6} They all go together and are just repeated.
+         </p>
+        <p>
+            {7} If you are just going from 32-bit to 32-bit or 64-bit to 64-bit, the steps are pretty much the same.
+         </p>
     </div>
 </body>
 </html>

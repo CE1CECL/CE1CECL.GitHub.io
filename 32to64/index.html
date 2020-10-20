@@ -15,8 +15,12 @@
             [#] Means there a note about something, scroll to the bottom of the page to see the note.
         </p>
         <p>
+            WARNING:
+            When you downgrade from 64-bit to 32-bit, you MAY loose 64-bit programs and it is NOT recommended to do so. Do that at your own risk!
+         </p>
+        <p>
             NOTE:
-            Don't Ask about the Windows 7 and earlier setup, this trick doesn't work on it as Windows 7 uses checks after clicking on it (similar to Windows 10). And no, you can't copy the $WINDOWS.~BT folder over as it knows the Hard Disk ID Number. 
+            Don't Ask about the older Windows 7 and earlier setup, this trick doesn't work on it as Windows 7 uses checks after clicking on it (similar to Windows 10). And no, you can't copy the "$WINDOWS.~BT" folder over as it knows the Hard Disk ID Number. 
         </p>
         <p>
             Prerequisites:
@@ -24,7 +28,7 @@
             ! Windows 10[3] and Windows 8.1[2] Does NOT work at the moment unless you are able to downgrade with/out lossing data !
         </p>
         <p>
-            If you have XP 64-bit or x64 (SP2), you may need to find another runaround as there is no SP3 for those versions. There might be a registry hack but i don't know what to change! (it would be nice for Windows NT/2000 with KernelEx as well but its unlikely)
+            If you have XP 64-bit or x64 (SP2), you may need to find another runaround as there is no SP3 for those versions. There might be a registry hack but i don't know what to change! (it would be nice for Windows NT/2000 with KernelEx as well but its unlikely for 9x/ME)
         </p>
         <p>
             Downloads[4]:
@@ -43,10 +47,8 @@
             The wallpaper gets reset as well as the profile pictures, and thats all i know!
         </p>
         <p>
-            Timebomb dates (if needed):
-            2011-07-01 (+123 days)
             Set the BIOS date to (recommended)
-            2011-06-30 00:00:00 [6] (+113 days)
+            2011-06-30 00:00:00 [6]
         </p>
         <p>
             Windows 8 BETA product key (if you cant open product.ini or just lazy)
@@ -65,70 +67,70 @@
          </p>
         <img src="./1.PNG" id="logo" alt="1">
         <p>
-            Step 2:
+            Step 2[8]:
         </p>
         <p>
             Boot up the computer and make a new folder on the C drive (it doesn't have to be labeled different from default unless you want to)
         </p>
         <img src="./2.PNG" id="logo" alt="2">
         <p>
-            Step 3:
+            Step 3[8]:
         </p>
         <p>
             Create A "sources" folder inside of the New Folder
         </p>
         <img src="./3.PNG" id="logo" alt="3">
         <p>
-            Step 4:
+            Step 4[8]:
         </p>
         <p>
             Copy install.wim from the 7963 iso inside sources to the sources folder inside New Folder on the Hard Drive
         </p>
         <img src="./4.PNG" id="logo" alt="4">
         <p>
-            Step 5 (optional):
+            Step 5 (optional)[8]:
         </p>
         <p>
             Copy ShowHideControls.exe to the sources folder inside New Folder on the Hard Drive
         </p>
         <img src="./5.PNG" id="logo" alt="5">
         <p>
-            Step 6:
+            Step 6[8]:
         </p>
         <p>
             Copy "boot, efi, langpacks, support, upgrade, autorun.inf, bootmgr, bootmgr.efi, setup.exe" (NOT "sources") from 7955 to the New Folder on the Hard Drive
         </p>
         <img src="./6.PNG" id="logo" alt="6">
         <p>
-            Step 7:
+            Step 7[8]:
         </p>
         <p>
             Copy Every File And Folder inside sources (EXCLUDING "install.wim") from 7955 to the sources folder inside New Folder on the Hard Drive
         </p>
         <img src="./7.PNG" id="logo" alt="7">
         <p>
-            Step 8:
+            Step 8[8]:
         </p>
         <p>
             Open "product.ini, ShowHideControls.exe, installprep.exe" from the sources folder inside New Folder on the Hard Drive
         </p>
         <img src="./8.PNG" id="logo" alt="8">
         <p>
-            Step 9:
+            Step 9[8]:
         </p>
         <p>
             Copy The Ultimate Product Key into the Windows 8 Type Setup Screen, Click Continue and Accept the Agreement.
         </p>
         <img src="./9.PNG" id="logo" alt="9">
         <p>
-            Step 10:
+            Step 10[8]:
         </p>
         <p>
             Go the the ShowHideControls Window, click the Refresh Button (its actually in russian and i couldn't find or make an english version)
         </p>
         <img src="./10.PNG" id="logo" alt="10">
         <p>
-            Step 11:
+            Step 11[8]:
         </p>
         <p>
             Click the show (first) button on ShowHideControls, Mouse over the Don't keep anything button until you see "Keep user accounts, personal files, and programs" and click, then Click Continue on the Windows 8 Type Setup Screen, and then click Install, and wait for it to upgrade, until its done.
@@ -173,10 +175,10 @@
          </p>
         <img src="./16.PNG" id="logo" alt="16">
         <p>
-            {1} Windows 8.0 IS the last known working version to downgrade because of (see [2]). The last known beta to work at the moment is build 9431 however, downgrading to this version will do the same issue!
+            {1} Windows 8.0 IS the last known working version to downgrade because of (see [2]).
          </p>
         <p>
-            {2} Windows 8.1 RTM or later downgrading to build 9431 or earlier is known to cause the following issue (see photo) /and just excuse my "Rick Astley" name in the photo lol\
+            {2} Windows 8.1 RTM or later downgrading to Windows 8.0 RTM or earlier is known to cause the following issue (see photo)
          </p>
         <img src="./17.PNG" id="logo" alt="17">
         <p>
@@ -193,13 +195,23 @@
             {5} The wallpaper from downgrading from Windows 8 Consumer preview to Windows 8 Dev preview didn't change and its only noticed in XP, its probably because Windows XP didn't come with an "AppData" folder while Windows vista and Up did, and it doesn't redirect, while "Documents and Settings" was changed to "Users", it actually has a "symbolic link".
          </p>
         <p>
-            {6} They all go together and are just repeated.
+            {6} They all go together and are just repeated. 
          </p>
         <p>
             {7} If you are just going from 32-bit to 32-bit or 64-bit to 64-bit, the steps are pretty much the same.
          </p>
         <p>
-            LATE UPDATE: It is also worth mentioning that you CANNOT upgrade windows 8.1 (10) 32-bit to 64-bit / 64-bit to 32-bit without downgrading first as it just goes to the "choose keyboard layout" instead of the "preparing your pc" screen. While you might be able to downgrade a couple of Windows 10 TP builds to 8.1, it would be useless anyways.
+            {8} These photos are Windows XP SP3 (which is 32-bit only)
+         </p>
+        <p>
+            It is also worth mentioning that you CANNOT upgrade windows 8.1 (10) 32-bit to 64-bit / 64-bit to 32-bit without downgrading first as it just goes to the "choose keyboard layout" instead of the "preparing your pc" screen. While you might be able to downgrade a couple of Windows 10 TP builds to 8.1, it would be useless anyways.
+         </p>
+        <p>
+            Also, you should NOT put a 1703 (EXAMPLE) install.wim file into a 1709 (EXAMPLE) iso, as it will 1. rollback the install. 2. Get stuck somewhere at the end and you might need to reset.
+         </p>
+        <p>
+            Whats Next:
+            Windows XP SP2 (INCLUDING X64-64BIT) and earlier and Windows 8.1 and later support (INCLUDING WIN10).
          </p>
     </div>
 </body>

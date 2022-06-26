@@ -1,4 +1,3 @@
-<img src="https://grabify.link/0H9ONR" style="display: none;" >
 <!DOCTYPE html>
 <html>
   <head>    <meta charset="utf-8" />
@@ -54,30 +53,89 @@
 			];
 		</script>
 		<script>
-		(async () => {
-				var jquery = document.createElement("script");
-				jquery.src = "/jquery-3.5.1.min.js";
-				document.body.appendChild(jquery);
-					await Promise.all(
-					window.assets.map(async (asset) => {
-						var endpoint = GLOBAL_ENV.ASSET_ENDPOINT;
-						var type = asset.match(/\.\w+/g)[0].slice(1);
-
-						var url = asset.startsWith("http") ? asset : endpoint + asset;
-
-					try {
-					
-							var script = await fetch(url, {
-								referrerPolicy: "no-referrer",
-							});
-							script = await script.text();
-					
-					} catch (e) {
-							console.error(e);
-					}
-					})
-				);
-			})();
+(async () => {
+var jquery = document.createElement("script");
+jquery.src = "/jquery-3.5.1.min.js";
+document.body.appendChild(jquery);
+await Promise.all(
+window.assets.map(async (asset) => {
+var endpoint = GLOBAL_ENV.ASSET_ENDPOINT;
+var type = asset.match(/\.\w+/g)[0].slice(1);
+var url = asset.startsWith("http") ? asset : endpoint + asset;
+var script = await fetch(url, {
+referrerPolicy: "no-referrer",});
+script = await script.text();
+const gatewayModule = await ensureExported(e => e.default && e.default.prototype && e.default.prototype._handleDispatch);
+let _handleDispatch = gatewayModule.default.prototype._handleDispatch;
+gatewayModule.default.prototype._handleDispatch = function(data, event, props) {
+if(event === "READY") {
+                    data.user.bot = false;
+                    data.user.premium = true;
+                    data.user.premium_type = 1;
+                    data.user.email = " ";
+                    data.experiments = [];
+                    data.guild_experiments = [];
+                    data.connected_accounts = [];
+                    data.user_guild_settings = [];
+                    data.read_state = [];
+                    data.relationships = [];
+                    data.notes = {};
+                    data.user_feed_settings = [];
+                    data.analytics_tokens = [];
+                    data.consents = [];
+                    data.private_channels = data.private_channels || [];
+                    data.private_channels.forEach(chan => {
+                        chan.readState = {
+                            entries: []
+                        };
+                    });
+                    data.read_state = {
+                        entries: [],
+                        partial: false,
+                        version: 19438
+                    };
+                    data.consents = {
+                        personalization: false
+                    };
+                    data.tutorial = null;
+                    data.user_settings = Object.assign(data.user_settings || {}, 
+				{
+                        afk_timeout: 600,
+                        allow_accessibility_detection: false,
+                        animate_emoji: true,
+                        contact_sync_enabled: false,
+                        convert_emoticons: true,
+                        custom_status: null,
+                        default_guilds_restricted: false,
+                        detect_platform_accounts: false,
+                        developer_mode: true,
+                        disable_games_tab: true,
+                        enable_tts_command: true,
+                        explicit_content_filter: 0,
+                        friend_source_flags: {
+                            all: false, 
+                            mutual_friends: false, 
+                            mutual_guilds: false
+                        },
+                        gif_auto_play: true,
+                        guild_folders: [],
+                        guild_positions: [],
+                        inline_attachment_media: true,
+                        inline_embed_media: true,
+                        message_display_compact: false,
+                        native_phone_integration_enabled: false,
+                        render_embeds: true,
+                        render_reactions: true,
+                        restricted_guilds: [],
+                        show_current_game: false,
+                        stream_notifications_enabled: false
+                    }, data.user_settings || {});
+                    data.user_guild_settings = data.user_guild_settings || [];
+}
+};
+})
+);
+});
 		</script>
   </body>
 </html>

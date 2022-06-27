@@ -12,7 +12,10 @@
       content="Discord is the easiest way to communicate over voice, video, and text.  Chat, hang out, and stay close with your friends and communities." /><meta property="og:image" content="//discord.com/assets/652f40427e1f5186ad54836074898279.png" />    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@discord" />
     <meta name="twitter:creator" content="@discord" />
-    <!-- endsection --><script>window.GLOBAL_ENV = {
+    <!-- endsection --><link rel="stylesheet" href="/assets/40532.94c43fc1ce60aa8ff6f2.css"><link rel="icon" href="/assets/ec2c34cadd4b5f4594415127380a85e6.ico" />    <!-- section:title -->
+    <title>Discord</title>
+    <!-- endsection -->
+	<script>window.GLOBAL_ENV = {
         API_ENDPOINT: '//discord.com/api',
         API_VERSION: 9,
         GATEWAY_ENDPOINT: 'wss://gateway.discord.gg',
@@ -40,46 +43,52 @@
         ALGOLIA_KEY: 'aca0d7082e4e63af5ba5917d5e96bed0',
       };</script>
 	  <script>
-	  ! function() {
-    if (null != window.WebSocket) {
-        if (function(n) {
-                try {
-                    var e = localStorage.getItem(n);
-                    return null == e ? null : JSON.parse(e)
-                } catch (n) {
-                    return null
-                }
-            }("token") && !window.__OVERLAY__) {
-            var n = null != window.DiscordNative || null != window.require ? "etf" : "json",
-                e = "wss://gateway.discord.gg" + "/?encoding=" + n + "&v=" + "7" + "&compress=zlib-stream";
-            console.log("[FAST CONNECT] connecting to: " + e);
-            var o = new WebSocket(e);
-            o.binaryType = "arraybuffer";
-            var t = Date.now(),
-                i = {
-                    open: !1,
-                    gateway: e,
-                    messages: []
-                };
-            o.onopen = function() {
-                console.log("[FAST CONNECT] connected in " + (Date.now() - t) + "ms"), i.open = !0
-            }, o.onclose = o.onerror = function() {
-                window._ws = null
-            }, o.onmessage = function(n) {
-                i.messages.push(n)
-            }, window._ws = {
-                ws: o,
-                state: i
-            }
-        }
-    }
-}();
-	  </script><link rel="stylesheet" href="/assets/40532.94c43fc1ce60aa8ff6f2.css"><link rel="icon" href="/assets/ec2c34cadd4b5f4594415127380a85e6.ico" />    <!-- section:title -->
-    <title>Discord</title>
-    <!-- endsection -->
+	  window.__OVERLAY__ = /overlay/.test(location.pathname)
+	  </script>
+	  <script>
+	  window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname)
+	  </script>
+	  <script>
+			localStorage.setItem("gatewayURL", `"wss://gateway.discord.gg"`);
+			!(function () {
+				if (null != window.WebSocket) {
+					var n = function (n) {
+							try {
+								var e = localStorage.getItem(n);
+								return null == e ? null : JSON.parse(e);
+							} catch (n) {
+								return null;
+							}
+						},
+						e = n("token"),
+						o = n("gatewayURL");
+					console.log(o);
+
+					if (e && o && !window.__OVERLAY__) {
+						var r = null != window.DiscordNative || null != window.require ? "etf" : "json",
+							t = o + "/?encoding=" + r + "&v=6&compress=zlib-stream";
+						console.log("[FAST CONNECT] " + t + ", encoding: " + r + ", version: 6");
+						var a = new WebSocket(t);
+						a.binaryType = "arraybuffer";
+						var s = Date.now(),
+							i = { open: !1, gateway: t, messages: [] };
+						(a.onopen = function () {
+							console.log("[FAST CONNECT] connected in " + (Date.now() - s) + "ms"), (i.open = !0);
+						}),
+							(a.onclose = a.onerror = function () {
+								window._ws = null;
+							}),
+							(a.onmessage = function (n) {
+								i.messages.push(n);
+							}),
+							(window._ws = { ws: a, state: i });
+					}
+				}
+			})();
+	  </script>
   </head>
   <body>
-    <div id="app-mount"></div><script>window.__OVERLAY__ = /overlay/.test(location.pathname)</script><script>window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname)</script>
+    <div id="app-mount"></div>
 		<script>
 			window.assets = [
 				"/assets/8cdf600873d1c69152ae.js",

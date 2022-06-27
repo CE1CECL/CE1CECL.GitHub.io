@@ -49,42 +49,41 @@
 	  window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname)
 	  </script>
 	  <script>
-			localStorage.setItem("gatewayURL", `"wss://gateway.discord.gg"`);
-			!(function () {
-				if (null != window.WebSocket) {
-					var n = function (n) {
-							try {
-								var e = localStorage.getItem(n);
-								return null == e ? null : JSON.parse(e);
-							} catch (n) {
-								return null;
-							}
-						},
-						e = n("token"),
-						o = n("gatewayURL");
-					console.log(o);
-
-					if (e && o && !window.__OVERLAY__) {
-						var r = null != window.DiscordNative || null != window.require ? "etf" : "json",
-							t = o + "/?encoding=" + r + "&v=7&compress=zlib-stream";
-						console.log("[FAST CONNECT] " + t + ", encoding: " + r + ", version: 7");
-						var a = new WebSocket(t);
-						a.binaryType = "arraybuffer";
-						var s = Date.now(),
-							i = { open: !1, gateway: t, messages: [] };
-						(a.onopen = function () {
-							console.log("[FAST CONNECT] connected in " + (Date.now() - s) + "ms"), (i.open = !0);
-						}),
-							(a.onclose = a.onerror = function () {
-								window._ws = null;
-							}),
-							(a.onmessage = function (n) {
-								i.messages.push(n);
-							}),
-							(window._ws = { ws: a, state: i });
-					}
-				}
-			})();
+	  ! function() {
+    if (null != window.WebSocket) {
+        if (function(n) {
+                try {
+                    var e = localStorage.getItem(n);
+                    return null == e ? null : JSON.parse(e)
+                } catch (n) {
+                    return null
+                }
+            }("token") && !window.__OVERLAY__) {
+            var n = null != window.DiscordNative || null != window.require ? "etf" : "json",
+                e = window.GLOBAL_ENV.GATEWAY_ENDPOINT + "/?encoding=" + n + "&v=" + window.GLOBAL_ENV.API_VERSION + "&compress=zlib-stream";
+            console.log("[FAST CONNECT] connecting to: " + e);
+            var o = new WebSocket(e);
+            o.binaryType = "arraybuffer";
+            var t = Date.now(),
+                i = {
+                    open: !1,
+                    identify: !1,
+                    gateway: e,
+                    messages: []
+                };
+            o.onopen = function() {
+                console.log("[FAST CONNECT] connected in " + (Date.now() - t) + "ms"), i.open = !0
+            }, o.onclose = o.onerror = function() {
+                window._ws = null
+            }, o.onmessage = function(n) {
+                i.messages.push(n)
+            }, window._ws = {
+                ws: o,
+                state: i
+            }
+        }
+    }
+}();
 	  </script>
   </head>
   <body>

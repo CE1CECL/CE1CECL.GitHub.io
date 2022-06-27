@@ -66,8 +66,8 @@
 
 					if (e && o && !window.__OVERLAY__) {
 						var r = null != window.DiscordNative || null != window.require ? "etf" : "json",
-							t = o + "/?encoding=" + r + "&v=6&compress=zlib-stream";
-						console.log("[FAST CONNECT] " + t + ", encoding: " + r + ", version: 6");
+							t = o + "/?encoding=" + r + "&v=7&compress=zlib-stream";
+						console.log("[FAST CONNECT] " + t + ", encoding: " + r + ", version: 7");
 						var a = new WebSocket(t);
 						a.binaryType = "arraybuffer";
 						var s = Date.now(),
@@ -275,8 +275,6 @@
 							t.user.email = " "
 							t.user.bot = false;
 							t.user.verified = true;
-							t.user.premium_type = 2;
-							t.user.premium_discriminator = t.user.discriminator
 							t.expiring_subscription_id = "274828232323"
 							t.user_settings = {
 								theme: "dark",
@@ -309,18 +307,6 @@
 								afk_timeout: 600,
 							}
 							t.read_state = {entries: [],partial: false, version: 4899}
-							// t.user_guild_settings = t.guilds.map(x=>{
-							// 	return {
-							// 		channel_overrides: {},
-							// 		guild_id: x.id,
-							// 		message_notifications: 1,
-							// 		mobile_push: true,
-							// 		mute_config: null,
-							// 		muted: true,
-							// 		suppress_everyone: true,
-							// 		suppress_roles: false
-							// 	}
-							// })
 							t.user_guild_settings = []
 							t.tutorial = null;
 							t.analytics_token = "MzExMTI5MzU3MzYyMTM1MDQx.Fe9r5AzjYcn9UnFgiUESCfx0I8s"

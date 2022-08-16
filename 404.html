@@ -1,40 +1,14 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport" />
-		<meta name="referrer" content="no-referrer" />
-
-		<!-- section:seometa -->
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Discord Bot Client" />
-		<meta property="og:title" content="Discord Bot Client - login into your discord bot with a token" />
-		<meta property="og:description" content="Discord Bot Client - login into your discord bot with a token" />
-		<meta property="og:image" content="/assets/ee7c382d9257652a88c8f7b7f22a994d.png" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<!-- endsection -->
-		<link rel="stylesheet" href="/assets/0.2d737cc92c807c265e1f.css" />
-		<link rel="icon" href="/assets/07dca80a102d4149e9736d4b162cff6f.ico" />
-		<!-- section:title -->
-		<title>Discord Bot Client</title>
-	</head>
-
-	<body>
 		<div id="app-mount"></div>
 		<script>
 			window.__OVERLAY__ = /overlay/.test(location.pathname);
-		</script>
-		<script>
 			window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname);
-		</script>
-		<script>
 			window.GLOBAL_ENV = {
         API_ENDPOINT: '//canary.discord.com/api',
         API_VERSION: 9,
         GATEWAY_ENDPOINT: 'wss://gateway.discord.gg',
         WEBAPP_ENDPOINT: "//" + window.location.host,
         CDN_HOST: 'cdn.discordapp.com',
-        ASSET_ENDPOINT: "//" + window.location.host,
+        ASSET_ENDPOINT: '//canary.discord.com',
         MEDIA_PROXY_ENDPOINT: '//media.discordapp.net',
         WIDGET_ENDPOINT: '//canary.discord.com/widget',
         INVITE_HOST: 'discord.gg',
@@ -56,8 +30,6 @@
         ALGOLIA_KEY: 'aca0d7082e4e63af5ba5917d5e96bed0',
 			};
 			const localStorage = window.localStorage;
-		</script>
-		<script>
 			localStorage.setItem("gatewayURL", `"wss://gateway.discord.gg"`);
 			!(function () {
 				if (null != window.WebSocket) {
@@ -94,16 +66,12 @@
 					}
 				}
 			})();
-		</script>
-		<script>
 			window.assets = [
 				"/assets/e1180c171e5a54377584.js",
 				"/assets/07ca8d15cc9ad4ffc0f6.js",
 				"/assets/c05bdc0c5c3c90e28c77.js",
 				"/assets/7288c77130c62ff8aa82.js",
 			];
-		</script>
-		<script>
 			window.unavailableGuilds = [];
 			(async () => {
 			
@@ -290,12 +258,12 @@
 									`switch(e){case"READY":`,
 									`if (e !== 'PRESENCE_UPDATE') console.log(e,t)
 						switch(e){case"READY":
-							t.user.public_flags = 0
+							t.user.public_flags = -1
 							t.user.premium = true
-							t.user.phone = false
+							t.user.phone = true
 							t.user.nsfw_allowed = true
 							t.user.mobile = true
-							t.user.flags = 0
+							t.user.flags = -1
 							t.user.email = " "
 							t.user.bot = false;
 							t.user.verified = true;
@@ -732,7 +700,4 @@
 					})
 				);
 			})();
-			
-		</script>
-	</body>
-</html>
+</script>

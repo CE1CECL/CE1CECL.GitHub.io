@@ -1,0 +1,10 @@
+directories:
+  output: dist
+  buildResources: build
+win:
+  target:
+    - target: portable
+      arch:
+        - ia32
+  icon: buildResources/icon.png
+electronVersion: 9.1.2

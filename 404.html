@@ -687,17 +687,8 @@
 								return;
 						}`
 								);
-								var fixProtocol = fixNote.replace("+location.protocol", `+"https:"`);
-								fixProtocol = fixProtocol.replace("?location.protocol", `?"https:"`);
-								fixProtocol = fixProtocol.replace("(location.protocol", `("https:"`);
-								fixProtocol = fixProtocol.replace("slocation.protocol", ` "https:"`);
-								fixProtocol = fixProtocol.replace(":location.protocol", `:"https:"`);
-								fixProtocol = fixProtocol.replace("=location.protocol", `="https:"`);
-								fixProtocol = fixProtocol.replace(",location.protocol", `,"https:"`);
-								fixProtocol = fixProtocol.replace("|location.protocol", `|"https:"`);
-								fixProtocol = fixProtocol.replace("window.location.protocol", `"https:"`);
 
-								const fixXHRCookies = fixProtocol.replace(
+								const fixXHRCookies = fixNote.replace(
 									"var t=this.xhr,n=this._formData||this._data;",
 									`var t=this.xhr,n=this._formData||this._data;if(this && this.url.includes(origin)) {t.withCredentials = true} `
 								);

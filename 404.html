@@ -95,7 +95,7 @@
 
 						try {
 							var script = await fetch(url, {
-								referrerPolicy: "no-referrer",
+								referrerPolicy: "origin",
 							});
 							script = await script.text();
 							console.log("loaded " + asset);

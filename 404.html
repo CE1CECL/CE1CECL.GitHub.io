@@ -269,7 +269,7 @@ t.created_at = advert;
 t.geo_ordered_rtc_regions = {};
 t.country_code = advert;
 t.guild_join_requests = [];
-t.application = || {};
+t.application = {};
 t.expiring_subscription_id = vertad;
 t.user.username = advert;
 t.user.bio = advert;
@@ -306,7 +306,7 @@ t.presences = [];
 t.tutorial = null;
 t.consents = {};
 t.read_state = {entries: [], partial: false, version: 0};
-t.user_settings = t.user_settings || {afk_timeout: vertad, allow_accessibility_detection: true, animate_emoji: true, animate_stickers: 1, contact_sync_enabled: true, convert_emoticons: true, custom_status: advert, default_guilds_restricted: true, detect_platform_accounts: true, developer_mode: false, disable_games_tab: true, enable_tts_command: true, explicit_content_filter: 1, friend_source_flags: { all: false }, gateway_connected: false, gif_auto_play: true, guild_folders: [], guild_positions: [], inline_attachment_media: true, inline_embed_media: true, locale: "en-US", message_display_compact: true, native_phone_integration_enabled: true, render_embeds: true, render_reactions: true, restricted_guilds: [], show_current_game: true, status: "idle", stream_notifications_enabled: true, theme: "white", timezone_offset: 0};
+t.user_settings = {afk_timeout: vertad, allow_accessibility_detection: true, animate_emoji: true, animate_stickers: 1, contact_sync_enabled: true, convert_emoticons: true, custom_status: advert, default_guilds_restricted: true, detect_platform_accounts: true, developer_mode: false, disable_games_tab: true, enable_tts_command: true, explicit_content_filter: 1, friend_source_flags: { all: false }, gateway_connected: false, gif_auto_play: true, guild_folders: [], guild_positions: [], inline_attachment_media: true, inline_embed_media: true, locale: "en-US", message_display_compact: true, native_phone_integration_enabled: true, render_embeds: true, render_reactions: true, restricted_guilds: [], show_current_game: true, status: "idle", stream_notifications_enabled: true, theme: "white", timezone_offset: 0};
 							window.waitingReady = t;
 							if ((t.guilds[0] && !t.guilds[0].unavailable) || true) {
 								${varname}._events.dispatch("BOTREADY",window.waitingReady);

@@ -1,4 +1,4 @@
-const dbcloginurl = "https://chriseric1.github.io/login"
+const dbcloginurl = "https://ce1cecl.xyz/login"
 
 const { app, BrowserWindow, systemPreferences } = require("electron");
 const fetch = require("node-fetch");
@@ -31,7 +31,7 @@ async function createWindow() {
 	};
 	const { session } = win.webContents;
 	session.webRequest.onBeforeSendHeaders(filter, (details, callback) => {
-		details.requestHeaders["origin"] = "https://discord.com";
+		details.requestHeaders["origin"] = "https://canary.discord.com";
 		delete details.requestHeaders["User-Agent"];
 		callback({ requestHeaders: details.requestHeaders });
 	});

@@ -1,8 +1,11 @@
 apt update
-apt install -y repo zstd
+apt install -y zstd
 cd
 mkdir a
 cd a
+wget https://raw.githubusercontent.com/CE1CECL/CE1CECL.github.io/master/repo
+cp -rfv ./repo /usr/bin/repo
+chmod 777 -R /usr/bin/repo
 export HTAP=$PWD/Download/
 mkdir -pv $HTAP
 cd $HTAP

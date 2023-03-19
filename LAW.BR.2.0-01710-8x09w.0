@@ -14,7 +14,7 @@ rm -rfv ./.*
 echo "maybe so" > yes.no
 mkdir -pv LAW.BR.2.0-01710-8x09w.0
 cd LAW.BR.2.0-01710-8x09w.0
-repo init -u http://github.com/CE1CECL/m --verbose --submodules --no-current-branch --tags --no-partial-clone --use-superproject --clone-bundle --git-lfs --no-repo-verify --manifest-name=LAW.BR.2.0-01710-8x09w.0.xml
-repo sync --jobs=$(nproc --all) --jobs-network=$(nproc --all) --jobs-checkout=$(nproc --all) --force-broken --force-sync --no-manifest-update --detach --no-current-branch --clone-bundle --fetch-submodules --use-superproject --tags --no-prune --verbose --all-manifests --no-repo-verify  
+repo init -u http://github.com/CE1CECL/m --submodules --no-current-branch --tags --no-partial-clone --use-superproject --clone-bundle --git-lfs --no-repo-verify --manifest-name=LAW.BR.2.0-01710-8x09w.0.xml
+repo sync --jobs=$(nproc --all) --jobs-network=$(nproc --all) --jobs-checkout=$(nproc --all) --force-broken --force-sync --no-manifest-update --detach --no-current-branch --clone-bundle --fetch-submodules --use-superproject --tags --no-prune --all-manifests --no-repo-verify  
 cd $HTAP
 ZSTD_CLEVEL=99 tar -I zstd -cvf m.zst ./*

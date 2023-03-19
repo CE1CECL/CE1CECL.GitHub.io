@@ -1,3 +1,4 @@
+apt update
 apt install -y repo zstd
 cd
 mkdir a

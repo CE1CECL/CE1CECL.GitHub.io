@@ -1,0 +1,20 @@
+apt update
+apt install -y zstd
+cd
+mkdir a
+cd a
+wget https://raw.githubusercontent.com/CE1CECL/CE1CECL.github.io/master/repo
+cp -rfv ./repo /usr/bin/repo
+chmod 777 -R /usr/bin/repo
+export HTAP=$PWD/Download/
+mkdir -pv $HTAP
+cd $HTAP
+rm -rfv ./*
+rm -rfv ./.*
+echo "maybe so" > yes.no
+mkdir -pv mtk-watch
+cd mtk-watch
+repo init -u http://github.com/CE1CECL/m --verbose --submodules --no-current-branch --tags --no-partial-clone --use-superproject --clone-bundle --git-lfs --no-repo-verify --manifest-name=mtk-watch.xml
+repo sync --jobs=$(nproc --all) --jobs-network=$(nproc --all) --jobs-checkout=$(nproc --all) --force-broken --force-sync --no-manifest-update --detach --no-current-branch --clone-bundle --fetch-submodules --use-superproject --tags --no-prune --verbose --all-manifests --no-repo-verify  
+cd $HTAP
+ZSTD_CLEVEL=99 tar -I zstd -cvf m.zst ./*

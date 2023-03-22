@@ -14,7 +14,7 @@ rm -rfv ./.*
 echo "maybe so" > yes.no
 mkdir -pv LNX.LA.3.7.2.1-03710-8x16.0
 cd LNX.LA.3.7.2.1-03710-8x16.0
-repo init -u http://github.com/CE1CECL/m --submodules --no-current-branch --tags --no-partial-clone --use-superproject --clone-bundle --git-lfs --no-repo-verify --manifest-name=LNX.LA.3.7.2.1-03710-8x16.0.xml
-repo sync --jobs=$(nproc --all) --jobs-network=$(nproc --all) --jobs-checkout=$(nproc --all) --force-broken --force-sync --no-manifest-update --detach --no-current-branch --clone-bundle --fetch-submodules --use-superproject --tags --no-prune --all-manifests --no-repo-verify  
+repo init -u http://github.com/CE1CECL/m -c --no-tags --dissociate --partial-clone --no-use-superproject --no-clone-bundle --no-git-lfs --no-repo-verify -m LNX.LA.3.7.2.1-03710-8x16.0.xml
+repo sync -j$(nproc) --fail-fast --nmu -d -c --no-clone-bundle --no-use-superproject --no-tags --prune --no-repo-verify  
 cd $HTAP
 ZSTD_CLEVEL=99 tar -I zstd -cvf m.zst ./*

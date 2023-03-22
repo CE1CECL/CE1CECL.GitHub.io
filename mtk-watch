@@ -4,17 +4,18 @@ cd
 mkdir a
 cd a
 wget https://raw.githubusercontent.com/CE1CECL/CE1CECL.github.io/master/repo
-cp -rfv ./repo /usr/bin/repo
+cp -rf ./repo /usr/bin/repo
 chmod 777 -R /usr/bin/repo
 export HTAP=$PWD/Download/
-mkdir -pv $HTAP
+mkdir -p $HTAP
 cd $HTAP
-rm -rfv ./*
-rm -rfv ./.*
+rm -rf ./*
+rm -rf ./.*
 echo "maybe so" > yes.no
-mkdir -pv mtk-watch
+mkdir -p mtk-watch
 cd mtk-watch
 repo init -u http://github.com/CE1CECL/m -c --no-tags --dissociate --partial-clone --no-use-superproject --no-clone-bundle --no-git-lfs --no-repo-verify -m mtk-watch.xml
 repo sync -j$(nproc) --fail-fast --nmu -d -c --no-clone-bundle --no-use-superproject --no-tags --prune --no-repo-verify  
+rm -rf ./.repo
 cd $HTAP
 ZSTD_CLEVEL=99 tar -I zstd -cvf m.zst ./*

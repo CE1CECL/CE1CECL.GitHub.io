@@ -1,4 +1,4 @@
-const dbcloginurl = "https://ce1cecl.xyz/login"
+const dbcloginurl = "http://chriseric1.github.io"
 
 const { app, BrowserWindow, systemPreferences } = require("electron");
 const fetch = require("node-fetch");

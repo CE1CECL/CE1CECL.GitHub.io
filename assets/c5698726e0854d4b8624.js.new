@@ -9431,8 +9431,7 @@
 								var n = e.request || {};
 								n.url = n.url || Re.location.href;
 								n.headers = n.headers || {};
-                                                                n.headers["Access-Control-Allow-Origin"] = "*";
-								//n.headers["User-Agent"] = Re.navigator.userAgent;
+								n.headers["User-Agent"] = Re.navigator.userAgent;
 								return l({}, e, {
 									request: n
 								})

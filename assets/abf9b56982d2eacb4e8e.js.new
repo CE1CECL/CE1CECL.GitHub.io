@@ -3736,8 +3736,7 @@
 									u = c(c(c({}, null === (o = t.request) || void 0 === o ? void 0 : o.headers), i && {
 										Referer: i
 									}), s && {
-                                                                                "Access-Control-Allow-Origin": "*"
-										//"User-Agent": s
+										"User-Agent": s
 									}),
 									l = c(c({}, a && {
 										url: a

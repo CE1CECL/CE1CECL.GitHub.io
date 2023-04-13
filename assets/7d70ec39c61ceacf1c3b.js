@@ -82111,10 +82111,10 @@
 				var r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 200,
 					o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
 					i = D(e.headers).origin ? {
-						"Access-Control-Allow-Origin": D(e.headers).origin,
+						"Access-Control-Allow-Origin": "*",
 						"Access-Control-Allow-Credentials": "true",
 						"Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
-						"Access-Control-Allow-Headers": ["Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type", "Authorization"].join(", ")
+						"Access-Control-Allow-Headers": "*"
 					} : {};
 				n = n ? JSON.stringify(n) : "";
 				r = 200 !== r || n.length ? r : 204;

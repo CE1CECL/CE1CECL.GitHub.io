@@ -82114,7 +82114,7 @@
 						"Access-Control-Allow-Origin": D(e.headers).origin,
 						"Access-Control-Allow-Credentials": "true",
 						"Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
-						"Access-Control-Allow-Headers": ["Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type", "Authorization"].join(", ")
+						"Access-Control-Allow-Headers": ["Content-Type", "Authorization"].join(", ")
 					} : {};
 				n = n ? JSON.stringify(n) : "";
 				r = 200 !== r || n.length ? r : 204;

@@ -1,0 +1,80 @@
+apt install zstd git
+git clone --recurse --branch ce1cecl http://github.com/CE1CECL/qemu /home/runner/qxyz
+cd /home/runner/qxyz/
+chmod -Rv 777 /home/runner/qxy*
+
+for s in $(find)
+do 
+sed -i 's/red hat/abc ath/g' $s --debug
+sed -i 's/redhat/abcath/g' $s --debug 
+sed -i 's/RED HAT/ABC ATH/g' $s --debug
+sed -i 's/REDHAT/ABCATH/g' $s --debug 
+sed -i 's/Red Hat/Abc Ath/g' $s --debug
+sed -i 's/RedHat/AbcAth/g' $s --debug 
+sed -i 's/Red hat/Abc ath/g' $s --debug 
+sed -i 's/Redhat/Abcath/g' $s --debug 
+sed -i 's/Redhat/Abcath/g' $s --debug 
+sed -i 's/qumranet/cumrenat/g' $s --debug 
+sed -i 's/Qumranet/Cumrenat/g' $s --debug 
+sed -i 's/QUMRANET/CUMRENAT/g' $s --debug 
+sed -i 's/Xen/Nex/g' $s --debug 
+sed -i 's/xen/nex/g' $s --debug 
+sed -i 's/XEN/NEX/g' $s --debug 
+sed -i 's/Emu/Xyz/g' $s --debug 
+sed -i 's/EMU/XYZ/g' $s --debug 
+sed -i 's/emu/xyz/g' $s --debug 
+sed -i 's/VM/PM/g' $s --debug 
+sed -i 's/vm/pm/g' $s --debug 
+sed -i 's/Vm/Pm/g' $s --debug 
+sed -i 's/Bochs/Xobbo/g' $s --debug 
+sed -i 's/BOCHS/XOBBO/g' $s --debug 
+sed -i 's/bochs/xobbo/g' $s --debug 
+sed -i 's/SeaBIOS/BOISEas/g' $s --debug 
+sed -i 's/SEABIOS/BOISEAS/g' $s --debug 
+sed -i 's/Seabios/Boiseas/g' $s --debug 
+sed -i 's/seabios/boiseas/g' $s --debug 
+sed -i 's/Virt/Phyz/g' $s --debug 
+sed -i 's/VIRT/PHYZ/g' $s --debug 
+sed -i 's/virt/phyz/g' $s --debug
+sed -i 's/plex86/pelx96/g' $s --debug 
+sed -i 's/Plex86/Pelx96/g' $s --debug 
+sed -i 's/PLEX86/PELX96/g' $s --debug
+done
+
+for f in $(find | grep "red hat"); do mv -fvi -- "$f" "${f//red hat/abc ath}"; done
+for f in $(find | grep "redhat"); do mv -fvi -- "$f" "${f//redhat/abcath}"; done
+for f in $(find | grep "RED HAT"); do mv -fvi -- "$f" "${f//RED HAT/ABC}"; done
+for f in $(find | grep "REDHAT"); do mv -fvi -- "$f" "${f//REDHAT/ABCATH}"; done
+for f in $(find | grep "Red Hat/"); do mv -fvi -- "$f" "${f//Red Hat/Abc Ath}"; done
+for f in $(find | grep "RedHat"); do mv -fvi -- "$f" "${f//RedHat/AbcAth}"; done
+for f in $(find | grep "Red hat"); do mv -fvi -- "$f" "${f//Red hat/Abc ath}"; done
+for f in $(find | grep "Redhat"); do mv -fvi -- "$f" "${f//Redhat/Abcath}"; done
+for f in $(find | grep "Redhat"); do mv -fvi -- "$f" "${f//Redhat/Abcath}"; done
+for f in $(find | grep "qumranet"); do mv -fvi -- "$f" "${f//qumranet/cumrenat}"; done
+for f in $(find | grep "Qumranet"); do mv -fvi -- "$f" "${f//Qumranet/Cumrenat}"; done
+for f in $(find | grep "QUMRANET"); do mv -fvi -- "$f" "${f//QUMRANET/CUMRENAT}"; done
+for f in $(find | grep "Xen"); do mv -fvi -- "$f" "${f//Xen/Nex}"; done
+for f in $(find | grep "xen"); do mv -fvi -- "$f" "${f//xen/nex}"; done
+for f in $(find | grep "XEN"); do mv -fvi -- "$f" "${f//XEN/NEX}"; done
+for f in $(find | grep "Emu"); do mv -fvi -- "$f" "${f//Emu/Xyz}"; done
+for f in $(find | grep "EMU"); do mv -fvi -- "$f" "${f//EMU/XYZ}"; done
+for f in $(find | grep "emu"); do mv -fvi -- "$f" "${f//emu/xyz}"; done
+for f in $(find | grep "VM"); do mv -fvi -- "$f" "${f//VM/PM}"; done
+for f in $(find | grep "vm"); do mv -fvi -- "$f" "${f//vm/pm}"; done
+for f in $(find | grep "Vm"); do mv -fvi -- "$f" "${f//Vm/Pm}"; done
+for f in $(find | grep "Bochs"); do mv -fvi -- "$f" "${f//Bochs/Xobbo}"; done
+for f in $(find | grep "BOCHS"); do mv -fvi -- "$f" "${f//BOCHS/XOBBO}"; done
+for f in $(find | grep "bochs"); do mv -fvi -- "$f" "${f//bochs/xobbo}"; done
+for f in $(find | grep "SeaBIOS"); do mv -fvi -- "$f" "${f//SeaBIOS/BOISEas}"; done
+for f in $(find | grep "SEABIOS"); do mv -fvi -- "$f" "${f//SEABIOS/BOISEAS}"; done
+for f in $(find | grep "Seabios"); do mv -fvi -- "$f" "${f//Seabios/Boiseas}"; done
+for f in $(find | grep "seabios"); do mv -fvi -- "$f" "${f//seabios/boiseas}"; done
+for f in $(find | grep "Virt"); do mv -fvi -- "$f" "${f//Virt/Phyz}"; done
+for f in $(find | grep "VIRT"); do mv -fvi -- "$f" "${f//VIRT/PHYZ}"; done
+for f in $(find | grep "virt"); do mv -fvi -- "$f" "${f//virt/phyz}"; done
+for f in $(find | grep "plex86"); do mv -fvi -- "$f" "${f//plex86/pelx96}"; done
+for f in $(find | grep "Plex86"); do mv -fvi -- "$f" "${f//Plex86/Pelx96}"; done
+for f in $(find | grep "PLEX86"); do mv -fvi -- "$f" "${f//PLEX86/PELX96}"; done
+
+ZSTD_CLEVEL=19 tar -I zstd -cvf /home/runner/a.tar.zst /home/runner/qxyz
+chmod 777 -Rv /home/runner/a.tar.zst

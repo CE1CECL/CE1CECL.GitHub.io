@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <title>32to64 (CE1CECL)</title>
 <link rel="icon" href="./invert.png">
-<link rel="stylesheet" type="text/css" href="./style.min.css">
+<link rel="stylesheet" type="text/css" href="./style.cecl.css">
 <body>
     <div id="content">
         <img src="./invert.png" id="logo" alt="CE1CECL Logo">
@@ -23,7 +23,7 @@
         </p>
         <p>
             Prerequisites:
-            Windows XP (SP3), Windows Vista, Windows 7, Windows 8.0[1]
+            Windows XP (SP3), Windows Vista, Windows 7, Windows 8.0[1] ( !!! CLIENT EDITONS ONLY, SERVER IS WIP (as of 2024) !!! )
             ! Windows 10[3] and Windows 8.1[2] Does NOT work at the moment unless you are able to downgrade with/out lossing data !
         </p>
         <p>
@@ -32,10 +32,14 @@
         <p>
             Downloads[4]:
         </p>
-	<a class="btn" href="./ShowHideControls.exe" rel="nofollow">ShowHideControls (Required)</a><br>
-        <a class="btn" href="https://ia800901.us.archive.org/2/items/MicrosoftWindows86.2.7955.0UltimateM2/Microsoft%20Windows%208%20%286.2.7955.0%29%20%28Ultimate%20m2%29.iso" rel="nofollow">Windows 8 Build 7955 (Required)</a><br>
-        <a class="btn" href="https://ia800903.us.archive.org/11/items/6.2.7963.0.winmain.1103101721Amd64freClientHomebasicHomepremiumProfessionalUltim/6.2.7963.0.winmain.110310-1721_amd64fre_client-homebasic-homepremium-professional-ultimate_retail_en-us-HM2_CCS_X64FRE_EN-US_DV5.iso" rel="nofollow">Windows 8 Build 7963 (if upgrading to 64-bit from 32-bit)</a><br>
-        <a class="btn" href="https://osvault.weebly.com/" rel="nofollow">Source for Windows 8 Build 7955 & Windows 8 Build 7963 (OSVault) in Windows BETA Repo</a><br>
+	<a class="btn" href="./ShowHideControls.exe" rel="nofollow">ShowHideControls (Orignal version) (Required)</a><br>
+	<a class="btn" href="./ShowHideControls_en-us.exe" rel="nofollow">ShowHideControls (English Modified version) (Required)</a><br>
+        <a class="btn" href="http://ia800901.us.archive.org/2/items/MicrosoftWindows86.2.7955.0UltimateM2/Microsoft%20Windows%208%20%286.2.7955.0%29%20%28Ultimate%20m2%29.iso" rel="nofollow">Windows 8 Build 7955 (Required)</a><br>
+        <a class="btn" href="http://ia800903.us.archive.org/11/items/6.2.7963.0.winmain.1103101721Amd64freClientHomebasicHomepremiumProfessionalUltim/6.2.7963.0.winmain.110310-1721_amd64fre_client-homebasic-homepremium-professional-ultimate_retail_en-us-HM2_CCS_X64FRE_EN-US_DV5.iso" rel="nofollow">Windows 8 Build 7963 (if upgrading to 64-bit from 32-bit)</a><br>
+        <a class="btn" href="http://osvault.weebly.com/windows-beta-repository.html" rel="nofollow">(Latest) Source for Windows 8 Build 7955 & Windows 8 Build 7963 (OSVault) in Windows BETA Repo</a><br>
+        <a class="btn" href="http://web.archive.org/web/20201023064121/http://osvault.weebly.com/" rel="nofollow">(Original) Source for Windows 8 Build 7955 & Windows 8 Build 7963 (OSVault) in Windows BETA Repo</a><br>
+        <a class="btn" href="https://www.betaarchive.com/forum/viewtopic.php?t=41963" rel="nofollow">BetaArchive Forum</a><br>
+        <a class="btn" href="https://www.youtube.com/watch?v=xOMtuAerX3g" rel="nofollow">YouTube Video</a><br>
         <p>
             ! WARNING !
             I am not responsible for any damage or any data loss that occurred. Use this method at your own risk. THIS IS EXPERIMENTAL Its also worth mentioning that these 2 Windows 8 downloads are BETA builds, meaning it should not be used on primary systems! These builds also have a timebomb, but for me, they were broken. 
@@ -64,84 +68,84 @@
         <p>
             Enter your computers BIOS, and set the date to 06/30/2011 (BIOS key will very depending on computer, vmware workstation uses F2, the time can stay the same but I would set it to 00:00:00) [6]
          </p>
-        <img src="./1.PNG" id="logo" alt="1">
+        <img src="./1.PNG" id="ogol" alt="1">
         <p>
             Step 2[8]:
         </p>
         <p>
             Boot up the computer and make a new folder on the C drive (it doesn't have to be labeled different from default unless you want to)
         </p>
-        <img src="./2.PNG" id="logo" alt="2">
+        <img src="./2.PNG" id="ogol" alt="2">
         <p>
             Step 3[8]:
         </p>
         <p>
             Create A "sources" folder inside of the New Folder
         </p>
-        <img src="./3.PNG" id="logo" alt="3">
+        <img src="./3.PNG" id="ogol" alt="3">
         <p>
             Step 4[8]:
         </p>
         <p>
             Copy install.wim from the 7963 iso inside sources to the sources folder inside New Folder on the Hard Drive
         </p>
-        <img src="./4.PNG" id="logo" alt="4">
+        <img src="./4.PNG" id="ogol" alt="4">
         <p>
             Step 5 (optional)[8]:
         </p>
         <p>
             Copy ShowHideControls.exe to the sources folder inside New Folder on the Hard Drive
         </p>
-        <img src="./5.PNG" id="logo" alt="5">
+        <img src="./5.PNG" id="ogol" alt="5">
         <p>
             Step 6[8]:
         </p>
         <p>
             Copy "boot, efi, langpacks, support, upgrade, autorun.inf, bootmgr, bootmgr.efi, setup.exe" (NOT "sources") from 7955 to the New Folder on the Hard Drive
         </p>
-        <img src="./6.PNG" id="logo" alt="6">
+        <img src="./6.PNG" id="ogol" alt="6">
         <p>
             Step 7[8]:
         </p>
         <p>
             Copy Every File And Folder inside sources (EXCLUDING "install.wim") from 7955 to the sources folder inside New Folder on the Hard Drive
         </p>
-        <img src="./7.PNG" id="logo" alt="7">
+        <img src="./7.PNG" id="ogol" alt="7">
         <p>
             Step 8[8]:
         </p>
         <p>
             Open "product.ini, ShowHideControls.exe, installprep.exe" from the sources folder inside New Folder on the Hard Drive
         </p>
-        <img src="./8.PNG" id="logo" alt="8">
+        <img src="./8.PNG" id="ogol" alt="8">
         <p>
             Step 9[8]:
         </p>
         <p>
             Copy The Ultimate Product Key into the Windows 8 Type Setup Screen, Click Continue and Accept the Agreement.
         </p>
-        <img src="./9.PNG" id="logo" alt="9">
+        <img src="./9.PNG" id="ogol" alt="9">
         <p>
             Step 10[8]:
         </p>
         <p>
             Go the the ShowHideControls Window, click the Refresh Button (its actually in russian and i couldn't find or make an english version)
         </p>
-        <img src="./10.PNG" id="logo" alt="10">
+        <img src="./10.PNG" id="ogol" alt="10">
         <p>
             Step 11[8]:
         </p>
         <p>
             Click the show (first) button on ShowHideControls, Mouse over the Don't keep anything button until you see "Keep user accounts, personal files, and programs" and click, then Click Continue on the Windows 8 Type Setup Screen, and then click Install, and wait for it to upgrade, until its done.
         </p>
-        <img src="./11.PNG" id="logo" alt="11">
+        <img src="./11.PNG" id="ogol" alt="11">
         <p>
             Step 12:
         </p>
         <p>
             Done. Step 12 is not really a step but you did it!
         </p>
-        <img src="./12.PNG" id="logo" alt="12">
+        <img src="./12.PNG" id="ogol" alt="12">
         <p>
             Downgrade to 32-bit method[7]:
         </p>
@@ -151,39 +155,39 @@
         <p>
             Enter your computers BIOS, and set the date to 06/30/2011 (BIOS key will very depending on computer, vmware workstation uses F2, the time can stay the same but I would set it to 00:00:00) [6]
          </p>
-        <img src="./13.PNG" id="logo" alt="13">
+        <img src="./13.PNG" id="ogol" alt="13">
         <p>
             Step 2:
         </p>
         <p>
             Go to the 7955 iso and open "product.ini & installprep.exe" (you don't have to modify the iso this time). Also open ShowHideControls.exe and enter the product key in Windows 8 Type Setup Screen.
          </p>
-        <img src="./14.PNG" id="logo" alt="14">
+        <img src="./14.PNG" id="ogol" alt="14">
         <p>
             Step 3:
         </p>
         <p>
             Accept The license agreement and go back to the ShowHideControls Window, click the Refresh Button, then Click the show (first) button on ShowHideControls, Mouse over the Don't keep anything button until you see "Keep user accounts, personal files, and programs" and click, then Click Continue on the Windows 8 Type Setup Screen, and then click Install, and wait for it to downgrade, until its done.
          </p>
-        <img src="./15.PNG" id="logo" alt="15">
+        <img src="./15.PNG" id="ogol" alt="15">
         <p>
             Step 4:
         </p>
         <p>
             Done. Step 4 is not really a step but you did it!
          </p>
-        <img src="./16.PNG" id="logo" alt="16">
+        <img src="./16.PNG" id="ogol" alt="16">
         <p>
             {1} Windows 8.0 IS the last known working version to downgrade because of (see [2]).
          </p>
         <p>
             {2} Windows 8.1 RTM or later downgrading to Windows 8.0 RTM or earlier is known to cause the following issue (see photo)
          </p>
-        <img src="./17.PNG" id="logo" alt="17">
+        <img src="./17.PNG" id="ogol" alt="17">
         <p>
             {3} Windows 10 build 9841 (TP) or later does not let you use the ShowHideControls trick for whatever reason (see video) It it known not occur on build 9870 because its just a windows 8.1 setup named "installprep.exe" instead of "setupprep.exe"!
          </p>
-	<video width="1024" height="768" controls autoplay loop>
+	<video id="ogol" width="1024" height="768" controls autoplay loop>
 	  <source src="0.mp4" type="video/mp4">
 	  Your browser does not support the video tag.
 	</video>

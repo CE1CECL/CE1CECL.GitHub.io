@@ -1,25 +1,20 @@
 {
-	"short_name": "Spacebar",
-	"name": "Spacebar",
-	"icons": [
-		{
-			"src": "favicon.ico",
-			"sizes": "64x64 32x32 24x24 16x16",
-			"type": "image/x-icon"
-		},
-		{
-			"src": "logo192.png",
-			"type": "image/png",
-			"sizes": "192x192"
-		},
-		{
-			"src": "logo512.png",
-			"type": "image/png",
-			"sizes": "512x512"
-		}
-	],
-	"start_url": ".",
-	"display": "standalone",
-	"theme_color": "#000000",
-	"background_color": "#ffffff"
+  "manifest_version": 2,
+  "name": "Discord Bot Client",
+  "version": "0",
+  "background": {
+    "scripts": [
+      "extension.DBC.js"
+    ]
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{23626f62-61ea-4cbf-ab88-dbfdf5e96efb}"
+    }
+  }
 }

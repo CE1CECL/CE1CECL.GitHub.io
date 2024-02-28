@@ -1,0 +1,2 @@
+class n{constructor(e){this.name=e,this.name=e}debug(...e){console.debug(`%c${new Date().toLocaleTimeString()} | ${this.name} | DEBUG |`,"color: LimeGreen",...e)}info(...e){console.info(`%c${new Date().toLocaleTimeString()} | ${this.name} | INFO |`,"color: DodgerBlue",...e)}warn(...e){console.warn(`%c${new Date().toLocaleTimeString()} | ${this.name} | WARN |`,"color: Tomato",...e)}error(...e){console.error(`%c${new Date().toLocaleTimeString()} | ${this.name} | ERROR |`,"color: Red",...e)}}export{n as L};
+//# sourceMappingURL=85yZmE5PqfcNKC64qTgv.js.map

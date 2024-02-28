@@ -1,0 +1,1 @@
+{"version":3,"file":"CvTyHmg_zCjhMZBgzEcn.js","sources":["../../src/components/Text.tsx"],"sourcesContent":["import styled from \"styled-components\";\n\nexport default styled.div`\n\tcolor: var(--text);\n`;\n"],"names":["styled"],"mappings":"8CAEA,MAAeA,EAAAA,EAAO;AAAA;"}

@@ -1,0 +1,2 @@
+function M(n,c,o,m){const u=o??400,l=m??300;let a=1;n>u&&(a=u/n),n=Math.round(n*a);let s=1;return(c=Math.round(c*a))>l&&(s=l/c),Math.min(a*s,1)}function d(n,c,o,m,u){const l=m??400,a=u??300,s=window.devicePixelRatio??1;let e=n,t=c;return o<1&&(e=Math.round(n*o),t=Math.round(c*o)),e=Math.min(e,l),t=Math.min(t,a),(e!==n||t!==c)&&(e|=0,t|=0),e*=s,t*=s,{scaledWidth:e,scaledHeight:t}}export{M as a,d as c};
+//# sourceMappingURL=DaR5CRO4DOjdQBIlmcQG.js.map

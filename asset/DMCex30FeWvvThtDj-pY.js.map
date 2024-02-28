@@ -1,0 +1,1 @@
+{"version":3,"file":"DMCex30FeWvvThtDj-pY.js","sources":["../../src/hooks/useLogger.ts"],"sourcesContent":["import Logger from \"../utils/Logger\";\n\nexport default function (name: string) {\n\treturn new Logger(name);\n}\n"],"names":["useLogger","name","Logger"],"mappings":"8CAEA,SAAAA,EAAyBC,EAAc,CAC/B,OAAA,IAAIC,EAAOD,CAAI,CACvB"}

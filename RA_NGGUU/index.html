@@ -23,42 +23,40 @@ function onkeydown() {
 		onmouseout();
 	}
 }
-function newXlt(){
+function newXlt() {
 	xOff = Math.ceil(-6 * Math.random()) * 5 - 10 ;
 	window.focus()
 }
-function newXrt(){
+function newXrt() {
 	xOff = Math.ceil(7 * Math.random())  * 5 - 10 ;
 }
-function newYup(){
+function newYup() {
 	yOff = Math.ceil(-6 * Math.random())  * 5 - 10 ;
 }
-function newYdn(){
+function newYdn() {
 	yOff = Math.ceil( 7 * Math.random())  * 5 - 10  ;
 }
-function playBall() {
-	xPos += xOff;
-	yPos += yOff;
-	if (xPos > screen.width - 357) {
-		newXlt();
-	}
-	if (xPos < 0){
-		newXrt();
-	}
-	if (yPos > screen.height - 330) {
-		newYup();
-	}	
-	if (yPos < 0){
-		newYdn();
-	}
-	window.resizeTo(357, 330);
-	window.moveTo(xPos, yPos);
+xPos += xOff;
+yPos += yOff;
+if (xPos > screen.width - 357) {
+	newXlt();
 }
+if (xPos < 0) {
+	newXrt();
+}
+if (yPos > screen.height - 330) {
+	newYup();
+}	
+if (yPos < 0) {
+	newYdn();
+}
+window.resizeTo(357, 330);
+window.moveTo(xPos, yPos);
 		</script>
 	</head>
-	<body onload="playBall();return true;" onkeydown="onkeydown();" onmouseout="onmouseout();" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+	<body onkeydown="onkeydown();" onmouseout="onmouseout();" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 		<video width="357" height="330" autoplay loop>
-			<source src="/RA_NGGUU.mp4" type="video/mp4">
+			<source src="/RA_NGGUU.mp4">
 		</video>
 	</body>
 </html>

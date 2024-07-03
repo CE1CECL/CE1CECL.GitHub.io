@@ -10,9 +10,9 @@ var yPos = -100;
 function onmouseout() {
 	for (var i = 0; i < 5; i++) {
 		if (location.port == "") {
-			window.open(location.protocol+"//"+location.hostname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
+			window.open(location.protocol+"//"+location.hostname+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
 		} else {
-			window.open(location.protocol+"//"+location.hostname+":"+location.port, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
+			window.open(location.protocol+"//"+location.hostname+":"+location.port+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
 		}
 	}
 }

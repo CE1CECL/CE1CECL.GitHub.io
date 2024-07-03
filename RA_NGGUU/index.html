@@ -41,13 +41,13 @@ yPos += yOff;
 if (xPos > screen.width - 357) {
 	newXlt();
 }
-if (xPos < 0) {
+if (xPos < 1) {
 	newXrt();
 }
 if (yPos > screen.height - 330) {
 	newYup();
 }	
-if (yPos < 0) {
+if (yPos < 1) {
 	newYdn();
 }
 window.resizeTo(357, 330);

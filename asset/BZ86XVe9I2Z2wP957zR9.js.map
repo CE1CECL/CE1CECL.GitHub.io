@@ -1,1 +1,0 @@
-{"version":3,"file":"BZ86XVe9I2Z2wP957zR9.js","sources":["../../src/components/Container.tsx"],"sourcesContent":["import styled from \"styled-components\";\n\nexport default styled.div`\n\tbackground-color: var(--background-tertiary);\n\tcolor: var(--text);\n\toverflow: hidden;\n`;\n"],"names":["styled"],"mappings":"8CAEA,MAAeA,EAAAA,EAAO;AAAA;AAAA;AAAA;"}

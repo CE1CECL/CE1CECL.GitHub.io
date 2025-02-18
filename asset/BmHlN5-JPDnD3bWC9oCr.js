@@ -1,2 +1,0 @@
-import{o as a,j as r,U as t}from"./D1zPwdc9cyvUD_PRY_dc.js";import{M as n}from"./Cg0FTUNWs2EUfIq273Sj.js";import{S as i}from"./GH0TMQeUxw1UrnZrFXOT.js";function u({group:o}){const{messages:s}=o;return r.jsx(r.Fragment,{children:s.map((e,p)=>e.type===t.Default||e.type===t.Reply?r.jsx(n,{message:e,header:p===s.length-1},e.id):r.jsx(i,{message:e},e.id))})}const x=a(u);export{x as M};
-//# sourceMappingURL=BmHlN5-JPDnD3bWC9oCr.js.map

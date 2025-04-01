@@ -9,7 +9,7 @@ function onload() {
 	var xPos = 400;
 	var yPos = -100;
 	setTimeout(lop, 1);
-	setTimeout(pol, 1);
+	setTimeout(pol, 2000);
 	function pool() {
 		if (location.port == "") {
 			open(location.protocol+"//"+location.hostname+location.pathname, "_blank", "menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes");
@@ -20,11 +20,7 @@ function onload() {
 	function pol() {
 		pool();
 		pool();
-		pool();
-		pool();
-		pool();
-		pool();
-		setTimeout(pol, 1);
+		setTimeout(pol, 2000);
 	};
 	function lop() {
 		document.title = " ! RICKROLLED ! ";
